@@ -12,6 +12,7 @@ header{
 h1{
   text-align: center;
   text-transform: uppercase;
+  font-size: 1.2rem;
 
 }
 .card{
@@ -38,7 +39,7 @@ h1{
   margin-bottom: 2rem;
 }
 .about h3{
- font-size: 1.6rem;
+ font-size: 1.2rem;
  color: #000;
 
   
@@ -63,7 +64,7 @@ header span{
   background-color:#000;
   color: #fff;
   padding: 2.4rem;
-  font-size: 2.4rem;
+  font-size: 2rem;
   text-align: center;
 }
 header nav{
@@ -75,12 +76,13 @@ header ul{
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  gap: 1.8rem;
 }
 nav a:link,
 nav a :visited
 {
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 0.6rem;
 }
 nav a:hover,
 nav a:active,
@@ -93,7 +95,7 @@ nav a:focus{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 3.2rem;
+  gap: 2.2rem;
 }
 .about-me img{
   width: 100%;
@@ -104,16 +106,17 @@ nav a:focus{
 }
 .about-info{
   padding: 2.4rem;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 .my-country{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 2.2rem;
 }
 .country-info{
   padding-right: 3.2rem;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 
@@ -127,7 +130,7 @@ footer{
   figcaption{
     text-align: center;
     font-style: italic;
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
 .resource-nav{
   padding: 4rem 0 0 2rem;
@@ -144,7 +147,7 @@ footer{
     gap: 1.4rem;
   }
   .resources-lists li a{
-    font-size:1.4rem ;
+    font-size:0.6rem ;
   }
   .resource-links:link,
 .resource-links:visited{
