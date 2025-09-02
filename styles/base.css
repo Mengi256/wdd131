@@ -145,3 +145,12 @@ footer{
   .resources-lists li a{
     font-size:1.4rem ;
   }
+  .resource-links:link,
+.resource-links:visited{
+  display: inline-block;
+}
+.resource-links:hover,
+.resource-links:active{
+  color: rgb(35, 35, 4);
+  font-style: italic;
+}
