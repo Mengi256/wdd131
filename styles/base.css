@@ -1,0 +1,147 @@
+body{
+  display: grid;
+  grid-template: auto auto auto/ 1fr auto  ;
+  gap: 1rem;
+  font-family: "Rubik",sans-serif;
+  padding: 4rem;
+}
+header{
+  grid-column: 1/-1;
+  
+}
+h1{
+  text-align: center;
+  text-transform: uppercase;
+
+}
+.card{
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.1);
+ 
+
+}
+.headings{
+  text-align: center;
+  background-color: rgb(249, 45, 45);
+  margin-top: 0;
+  padding: 1.8rem;
+  color: #000;
+  font-weight: 700;
+
+}
+.country-title{
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  border-bottom: 1px solid rgb(116, 114, 114);
+  margin-bottom: 2rem;
+}
+.about h3{
+ font-size: 1.6rem;
+ color: #000;
+
+  
+}
+main{
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template:auto/2fr 1fr;
+  gap: 2.4rem;
+}
+.about{
+  background-color:#fff;
+  grid-column: 1/2;
+}
+.resources{
+  background-color:#fff;
+  grid-column: 2/3;
+}
+header span{
+  display: block;
+  background-color:#000;
+  color: #fff;
+  padding: 2.4rem;
+  font-size: 2.4rem;
+  text-align: center;
+}
+header nav{
+  background-color: rgb(241, 238, 36);
+  padding: 0.2rem 4.8rem;
+}
+header ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.header-link:link,
+.header-link:visited
+{
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.header-link:hover,
+.header-link:active{
+  color: rgb(32, 8, 32);
+  font-style: italic;
+  text-decoration: underline;
+}
+.about-me{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3.2rem;
+}
+.about-me img{
+  width: 100%;
+ 
+}
+.about-img{
+  padding: 2.4rem;
+}
+.about-info{
+  padding: 2.4rem;
+  font-size: 1.4rem;
+}
+.my-country{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.country-info{
+  padding-right: 3.2rem;
+  font-size: 1.4rem;
+}
+
+
+footer{
+  grid-column: 1/-1;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+  figcaption{
+    text-align: center;
+    font-style: italic;
+    font-size: 1.6rem;
+}
+.resource-nav{
+  padding: 4rem 0 0 2rem;
+}
+
+.dev-img{
+  width: 100%;}
+  .dev-img-container{
+    padding: 2.4rem;
+  }
+  .resources-lists{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+  .resources-lists li a{
+    font-size:1.4rem ;
+  }
