@@ -7,6 +7,7 @@ body{
 }
 header{
   grid-column: 1/-1;
+  padding: 0 2.4rem;
   
 }
 h1{
@@ -50,6 +51,7 @@ main{
   display: grid;
   grid-template:auto/2fr 1fr;
   gap: 2.4rem;
+  padding: 0 2.4rem;
 }
 .about{
   background-color:#fff;
@@ -126,11 +128,13 @@ footer{
   color: #fff;
   font-weight: bold;
   text-align: center;
+  padding: 0 2.4rem;
 }
   figcaption{
     text-align: center;
     font-style: italic;
-    font-size: 1rem;
+    font-size: 0.6rem;
+    padding: 1rem 0;
 }
 .resource-nav{
   padding: 4rem 0 0 2rem;
@@ -153,4 +157,7 @@ footer{
 .resource-links:visited{
   display: inline-block;
   text-decoration: underline;
+}
+figure img{
+  width: 100%;
 }
