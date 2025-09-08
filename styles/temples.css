@@ -20,7 +20,7 @@ body{
 /* HEADER */
 #headerHeading {
   font-size: 1rem;
-  font-weight: 500;
+  
   text-align: left;
   padding: 1rem 1.2rem 1rem 1rem;
 }
@@ -132,8 +132,7 @@ figcaption{
   text-align: center;
   font-size: 1rem;
   margin-bottom: 1.4rem;
-  
-  filter: brightness(10);
+  color: #330033;
   
 }
 footer{
