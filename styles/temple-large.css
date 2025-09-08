@@ -1,0 +1,28 @@
+@media (min-width:768px) {
+  .temple-images{
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  gap: 2rem;
+}
+main{
+  max-width: 130rem;
+  margin: 0 auto;
+
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 4rem;
+}
+#menu{
+  display: none;
+}
+.navigation a{
+  display: block;
+}
+.navigation{
+  flex-direction: row;
+  padding: 1rem;
+}
+}
