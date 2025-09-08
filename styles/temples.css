@@ -37,7 +37,8 @@ header,main,footer{
 }
 .navigation a{
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 1rem;
+
   color: var(--primary-color);
   
   display: none;
