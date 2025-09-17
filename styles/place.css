@@ -9,8 +9,7 @@
     --secondary-color: #326500; /* Used for labels */
     --accent-color: #e69500; /* Background of h2 */
     --background-color: #fff; /* Used in the body */
-   
-    --value-color: #555; /* Color for value text */
+   --value-color: #555; /* Color for value text */
 }
 
 
@@ -62,8 +61,8 @@ justify-content: center;
 }
 
 .label {
-text-align: right; /* makes the colons align in a straight line */
-font-weight: bold; /* optional */
+text-align: right; 
+font-weight: bold; 
 color: var(--secondary-color);
 font-size: 0.4REM;
 }
