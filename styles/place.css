@@ -4,9 +4,19 @@
     box-sizing: border-box;
 
 }
+:root {
+    --primary-color: #734b00; /* Used for headings and footer text */
+    --secondary-color: #326500; /* Used for labels */
+    --accent-color: #e69500; /* Background of h2 */
+    --background-color: #fff; /* Used in the body */
+   
+    --value-color: #555; /* Color for value text */
+}
+
+
 body{
     font-family: "Roboto",sans-serif;
-    background-color: #fff;
+  
 }
 header{
     padding: 1rem;
@@ -25,7 +35,7 @@ h1{
     text-align: center;
     font-size:1.2rem ;
     margin: 0.6rem 0;
-    color:#734b00 ;
+    color:var(--primary-color);
 
 }
 section{
@@ -39,7 +49,7 @@ section{
 h2{
     font-size: 1rem;
     margin: 1rem 0;
-    color:#734b00 ;
+    color:var(--primary-color) ;
 }
 
 
@@ -54,19 +64,19 @@ justify-content: center;
 .label {
 text-align: right; /* makes the colons align in a straight line */
 font-weight: bold; /* optional */
-color: #326500;
+color: var(--secondary-color);
 font-size: 0.4REM;
 }
 .data .value{
     text-align: left;
     font-size: 0.6rem;
-    color: #555;
+    color: var(--value-color);
 }
 svg{
     width: 2rem;
     height: 2rem;
     margin: 0.4rem 0;
-    stroke: #326500;
+    stroke: var(--secondary-color);
 }
 
 .weather{
@@ -86,7 +96,7 @@ footer{
 
 @media (min-width:550px) {
     body {
-        background-color: #fff;
+        background-color: var(--background-color);
     }
    
     
@@ -106,7 +116,7 @@ footer{
     }
     .data-section,.weather{
         box-shadow: 4px 4px 4px  rgba(0,0,0,0.1);
-        background-color: #fff;
+        background-color: var(--background-color);
         margin-bottom: 1rem;
         margin-top: -2rem;
     }
@@ -114,18 +124,18 @@ footer{
         margin-top: -0.1rem;
     }
     .weather:hover{
-        background-color: #4b4848;
+        background-color:#7e7d7d ;
         color: #fff;
     }
 
     .data-section:hover{
-        background-color: #4b4848;
+        background-color:#7e7d7d ;
         color: #fff;
     }
     footer{
 
         border-top: 1px solid #888;
-        background-color: #fff;
+        background-color: var(--background-color);
         color: #000;
         
     }
@@ -156,13 +166,13 @@ footer{
     margin-top: 0;
   }
   h2{
-    background-color:#e69500;
+    background-color:var(--accent-color);
     padding: 1rem;
     text-align: left;
     margin-left: -1.3rem;
   }
   h1{
-    color:#734b00 ;
+    color:var(--primary-color) ;
     font-size: 2rem;
     
   }
@@ -179,7 +189,7 @@ footer{
     
   }
   footer p{
-    color: #734b00;
+    color: var(--primary-color);
     font-size: 1rem;
     margin-bottom: 0.4rem;
   }
