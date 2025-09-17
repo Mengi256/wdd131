@@ -64,11 +64,11 @@ justify-content: center;
 text-align: right; 
 font-weight: bold; 
 color: var(--secondary-color);
-font-size: 0.4REM;
+
 }
 .data .value{
     text-align: left;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     color: var(--value-color);
 }
 svg{
