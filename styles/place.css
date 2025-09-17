@@ -18,8 +18,8 @@ body{
   
 }
 header{
-    padding: 1rem;
-}
+    padding: 0.4rem;}
+
 .hero-section img{
     width: 100%;
     height: auto;
