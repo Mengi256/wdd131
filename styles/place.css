@@ -74,10 +74,9 @@ color: var(--secondary-color);
 svg{
     width: 2rem;
     height: 2rem;
-    margin: 0.4rem 0;
-    stroke: var(--secondary-color);
+    margin-bottom: 1rem;
+  
 }
-
 .weather{
     padding: 1rem;
 }
@@ -140,14 +139,9 @@ footer{
     }
      
   
- 
-
 }
 @media (min-width:1000px) {
-    body{
-        color: #241700;
-        background:linear-gradient(to top,#fff, #e7f5fb);
-    }
+   
     main{
         position: relative;
     }
@@ -161,37 +155,22 @@ footer{
     bottom: 4rem;
     right: 1rem;
   }  
-  .hero-section img{
-    margin-top: 0;
+  svg{
+    display: none;
   }
+  
   h2{
     background-color:var(--accent-color);
     padding: 1rem;
     text-align: left;
     margin-left: -1.3rem;
   }
-  h1{
-    color:var(--primary-color) ;
-    font-size: 2rem;
-    
-  }
-
-  .weather-heading::after{
+.weather-heading::after{
     content: "🌤️";
     right: 1rem;
    
     
   }
-  footer{
-    border: none;
-    background-color: transparent;
-    
-  }
-  footer p{
-    color: var(--primary-color);
-    font-size: 1rem;
-    margin-bottom: 0.4rem;
-  }
-  
+ 
 
 }
