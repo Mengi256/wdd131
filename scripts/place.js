@@ -1,7 +1,7 @@
 
-// Static winter values
-let temperature = 7; // °C
-let windSpeed = 10; // km/h
+
+let temperature = 7; 
+let windSpeed = 10; 
 
 function calculateWindChill(tempC, speedKmh) {
 return (
