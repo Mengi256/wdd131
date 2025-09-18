@@ -14,8 +14,9 @@
 
 
 body{
-    font-family: "Roboto",sans-serif;
-  
+    font-family: "Lato",sans-serif;
+    font-size: 1rem;
+   
 }
 header{
     padding: 0.4rem;}
@@ -32,21 +33,23 @@ header{
 
 h1{
     text-align: center;
-    font-size:1.2rem ;
+    font-size:2rem ;
     margin: 0.6rem 0;
     color:var(--primary-color);
+    padding: 0 2rem;
 
 }
 section{
     text-align: center;
 }
 .label{
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     font-weight: 700;
     text-align: right;
+    color: var(--secondary-color);
 }
 h2{
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin: 1rem 0;
     color:var(--primary-color) ;
 }
@@ -60,15 +63,10 @@ align-items: center;
 justify-content: center;
 }
 
-.label {
-text-align: right; 
-font-weight: bold; 
-color: var(--secondary-color);
 
-}
 .data .value{
     text-align: left;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: var(--value-color);
 }
 svg{
@@ -82,11 +80,11 @@ svg{
 }
 footer{
     text-align: center;
-    padding: 1rem;
+    padding: 1rem ;
     background-color:#3b5e1a;
     color: #f3fffd;
     margin: 1rem 0 0 0;
-    font-size: 0.6rem;
+    font-size: 1rem;
 }
 
   

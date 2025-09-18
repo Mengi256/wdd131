@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="The Eiffel Tower of France">
    <meta name="author" content="Mengi Mariam">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>The Eiffel Tower</title>
-    
+    <link rel = "preload" as="image" href="images/paris-small(1).webp" fetchpriority="high">
    <script src="scripts/place.js" defer></script>
-    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place.css" media="print" onload="this.media='all'">
     </head>
     
   <body>
@@ -23,7 +23,7 @@
       <picture>
         <source srcset="images/paris-medium-large.webp" media="(min-width: 1000px)">
         <source srcset="images/paris-medium-large.webp" media="(min-width: 550px)">
-        <img src="images/paris-small.webp" alt = "Eiffel Tower" >
+        <img src="images/paris-small(1).webp" alt = "Eiffel Tower" width="613" height="767" fetchpriority="high">
       </picture>
     </section> 
     <section class="data-container"> 
