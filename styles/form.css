@@ -6,7 +6,7 @@ box-sizing: border-box;
 body{
     font-family:"Rubik",sans-serif ;
     color:#800080; 
-    background-color: #f9b4f9;
+    background-color: #fff0ff;
 }
 
 h1{
@@ -18,11 +18,15 @@ h1{
     border-radius: 10px;
     color: #f5e5f5;
 }
+.rating label{
+    color: #632363;
+    font-weight: 900;
+}
 
 form{
 
-box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.1);
-background-color: #c0aec0;
+box-shadow: 4px 0 15px 4px rgba(93, 6, 93, 0.1);
+background-color: #ffe2ff;
 margin: 2rem;
 padding:1rem;
 border-radius: 10px;
@@ -49,8 +53,9 @@ option{
    margin-bottom: 1rem;
 }
 
-.features label{
+.feature-info label{
     display: block;
+    color: #632363;
     
 }
 .features-heading{
