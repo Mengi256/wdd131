@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product review</title>
+</head>
+<style>
+ body{
+    font-family:"Rubik",sans-serif ;
+    color:#240124; 
+    background-color: #f8d2f8;
+    padding: 1rem;
+}
+h1{
+  font-size: 1.4rem;
+}
+
+  footer{
+    background-color: #270327;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #f5e5f5;
+    margin: 2rem 0;
+}
+a:link,
+a:visited{
+  background-color: #800080;
+  padding: .6rem .4rem;
+  border-radius: 10px;
+  color: #f5e5f5;
+  text-decoration: none;
+  text-align: center;
+  font-size: .6rem;
+}
+.reviews{
+ 
+  padding: 1rem;
+box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.1);
+background-color: #c0aec0;
+
+border-radius: 10px;
+border: 1px solid rgba(255, 255, 255, 0.5);
+backdrop-filter: blur(30px);
+-webkit-backdrop-filter: blur(30px);
+
+
+}
+</style>
+<body>
+  <main>
+    <div class="review-box">
+      <h1>Your Scented Story Has Been Shared ! 🌸</h1>
+      <p>Thank You for Your Scented Thoughts!</p>
+      <p class="reviews"></p>
+     
+    </div>
+     <p>We hope you enjoyed reflecting on your perfume journey! </p>
+      
+    <a href="form.html">Add Another Review</a>
+
+  </main>
+  <footer>
+    <p>&copy;<span id="year"></span> | Mengi Mariam | Uganda</p>
+    <p id="lastModified"></p>
+  </footer>
+ 
+
+
+  
+    <script>
+
+  window.addEventListener("DOMContentLoaded", () => {
+   
+    let reviewCount = localStorage.getItem("reviewCount");
+
+ 
+    if (!reviewCount) {
+      reviewCount = 0;
+    }
+
+   
+    reviewCount = parseInt(reviewCount) + 1;
+
+   
+    localStorage.setItem("reviewCount", reviewCount);
+
+    
+    const review = document.querySelector(".review-box")
+    const counterDisplay = document.querySelector(".reviews");
+   
+    counterDisplay.textContent =  `Total Reviews Submitted So Far 🌸 ${reviewCount} review (s).`;
+    review.appendChild(counterDisplay);
+  });
+
+const year = document.querySelector("#year");
+
+date = new Date();
+year.textContent = date.getFullYear();
+
+const lastModified = new Date (document.lastModified)
+document.querySelector("#lastModified").innerHTML ="Last Modified: " + lastModified;
+
+
+</script>
+
+</body>
+</html>
