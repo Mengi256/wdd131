@@ -69,6 +69,7 @@ option{
     gap: 1rem;
     margin-bottom: 1rem;
 }
+
 textarea, #chooseProduct, #username,#date{
     width: 100%;
     margin-bottom: 1rem;
