@@ -97,7 +97,7 @@ main h2{
 }
 .wireframe h3{
     color: var(--secoundary-color);
-    margin-bottom:1rem 0 .6rem 0;
+    margin:1rem 0 .6rem 0;
 }
 .wireframe-img-box img{
     width: 100%;
