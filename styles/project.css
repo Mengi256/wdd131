@@ -769,8 +769,8 @@ footer{
 
 
 
-
-/* ------------------------- */ * { 
+/* 
+------------------------- * { 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -778,8 +778,7 @@ footer{
 body {
  
   font-family: "Rubik", sans-serif;
-  /* background-color: #e6f0e6; */
-  
+   
   
 }
 .about-header{
@@ -828,11 +827,11 @@ margin-bottom: 1rem;
 .about-navigation li a:active{
     color: #006400;
     text-decoration: underline;
-}
+} */
 /**********************/
 /***STORY SECTION***/
 /**********************/
-.our-story{
+/* .our-story{
      display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -855,11 +854,11 @@ margin-bottom: 1rem;
     font-size: 1rem;
     color: #555;
     line-height: 1.2;
-}
+} */
 /**********************/
 /***VISION AND MISSION SECTION***/
 /**********************/
-.vision-and-mission{
+/* .vision-and-mission{
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
@@ -877,12 +876,12 @@ margin-bottom: 1rem;
     color: #555;
     line-height: 1.2;
     margin-bottom: 1rem;
-}
+} */
 
 /**********************/
 /***COMMITMENT SECTION***/
 /**********************/
-.our-commitment{
+/* .our-commitment{
     padding: 1rem;
 }
 .commitment{
@@ -904,12 +903,12 @@ margin-bottom: 1rem;
     font-style: italic;
     color: #555;
 }
-
+  */
 /**********************/
 /***TEAM MEMBERS SECTION***/
 /**********************/
 
-.our-team-section{
+/* .our-team-section{
     padding:1rem ;
     margin-bottom: 1rem;
 }
@@ -976,7 +975,7 @@ margin-bottom: 1rem;
      color: #fdc500;
       
       text-decoration: none;
-}
+} */
 
 
 /**********************/
@@ -984,7 +983,7 @@ margin-bottom: 1rem;
 /**********************/
 
 
-.values-container{
+/* .values-container{
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
@@ -1013,4 +1012,4 @@ margin-bottom: 1rem;
 .value p{
     font-size: 1rem;
     color: #555;
-}
+} */ 
