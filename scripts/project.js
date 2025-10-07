@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
 });
 
-// NAVIGATION//
+// HEADER NAVIGATION LINKS//
 
 const nav_links =[
 {text:"Home", href: "project.html", active:true},
@@ -87,3 +87,49 @@ form.addEventListener("submit",function(e){
 }
    
 });
+
+// const counters = document.querySelectorAll(".count");
+// counters.forEach(counter =>{
+//   const updateCount = () =>{
+//     const target = +counter.getAttribute("data-target");
+//     const count = +counter.innerText;
+
+//     const increment = target /200;
+//     if(count <target){
+//       counter.innerText = (count+increment).toFixed(decimals);
+//       setTimeout(updateCount,10)
+
+//     }
+//     else{
+//       counter.innerText = target.toFixed(decimals)
+//     }
+//   };
+//   updateCount();
+// })
+const counters = document.querySelectorAll(".count");
+
+counters.forEach(counter => {
+  const updateCount = () => {
+    const target = parseFloat(counter.getAttribute("data-target"));
+    const currentText = counter.innerText.replace(/[^\d.]/g, ""); // Remove non-numeric characters
+    const count = parseFloat(currentText) || 0;
+
+    const increment = target / 200;
+    const decimals = target % 1 !== 0 ? 1 : 0;
+
+    if (count < target) {
+      counter.innerText = (count + increment).toFixed(decimals) + getSuffix(counter.innerText);
+      setTimeout(updateCount, 10);
+    } else {
+      counter.innerText = target.toFixed(decimals) + getSuffix(counter.innerText);
+    }
+  };
+
+  updateCount();
+});
+
+function getSuffix(text) {
+  const match = text.match(/[^\d.]+$/);
+  return match ? match[0] : "";
+}
+
