@@ -1,3 +1,10 @@
+
+window.addEventListener("load",() =>{
+   document.querySelector(".hero-info").classList.add("animate")
+ })
+// HAMBURGER MENU TOGGLE //
+
+
 const menu = document.querySelector("#menu");
 const mainNav  = document.querySelector(".navigation");
 const logoName = document.querySelector(".logo-name")
@@ -28,4 +35,55 @@ document.addEventListener("DOMContentLoaded",function(){
   e.preventDefault()
  service_container.style.display = "block"})
 
+});
+
+// NAVIGATION//
+
+const nav_links =[
+{text:"Home", href: "project.html", active:true},
+{text:"About", href: "about.html"},
+{text:"Services", href: "#services"},
+{text:"Contact", href: "contact.html"},
+
+];
+
+const navUl = document.querySelector(".navigation");
+if(navUl){
+    navUl.innerHTML = "";
+    nav_links.forEach(link =>{
+    
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.textContent = link.text;
+      a.href = link.href; 
+
+      if(link.href === "contact.html"){
+        a.classList.add("contact-btn")
+      }
+    
+      if(link.active) a.classList.add("active")
+     
+      li.classList.add("header-list")  
+      li.appendChild(a)
+      navUl.appendChild(li)
+ })}
+ else{
+  console.error(" Nvigation element not found")
+ }
+ ;
+
+//  NEWSLETTER FORM
+
+const form = document.querySelector("#newsletter-form");
+form.addEventListener("submit",function(e){
+  const userName = document.querySelector("#username").value;
+  const userEmail = document.querySelector("#useremail").value;
+  if(userName.length < 7 ){
+    e.preventDefault();
+    alert("Username should be longer than 6 characters ")
+   document.querySelector("#userName").value = ""
+   document.querySelector("#userEmail").value = ""
+
+}
+   
 });

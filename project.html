@@ -3,17 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The Eiffel Tower of France">
+    <meta name="description" content="Nitus Business Solutions">
     <meta name="author" content="Mengi Mariam">
     <link rel="stylesheet" href="styles/project.css" >
-       <script type="module"src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" >
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <script src="scripts/project.js" defer></script>
-    <script type="module"src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"rel="stylesheet">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <title>Nitus Solution Limited</title>
   </head>
   <body>
@@ -21,19 +20,14 @@
     <header class="home-header">
         <div id="header-container">  
           <div class="logo-logoName">
-           <img class="logo logo-img about-logo"src="images/nitus-logo.png"alt="Nitus solutin logo">
+           <img class="logo logo-img about-logo" src="images/nitus-logo.png" alt="Nitus solutin logo">
            <p class="logo-name about-logo-name">NITUS SOLUTIONS(U)LTD</p>
           </div>
           
         <div id="menu" class="about-menu"></div>
-           <nav class="menu-nav about-nav">
-              <ul class="navigation">
-                  <li class="header-list "><a href="index.html">Home</a></li>
-                  <li class="header-list "><a href="about.html">About Us</a></li>
-                  <li class="header-list "><a href="#">Our Services</a></li>
-                  <li class="header-list "><a href="#" class="contact-btn">Contact Us</a></li>
-              </ul>
-          </nav>
+            <nav class="menu-nav about-nav">
+              <ul class="navigation"></ul>
+          </nav> 
         </div>
     </header>
 
@@ -71,16 +65,18 @@
              <p class="card-info">We know the rules and steps to launch your business successfully</p>
            </div>
 
+           
+           <div class="card card--green">
+             <h3 class="card-title">Creative Solutions</h3>
+             <p class="card-info">Professional designs that make your business stand out.</p>
+           </div>
+
             <div class="card card--2">
               <h3 class="card-title card-title--2">Save Time</h3>
               <p class="card-info card--2--info">We handle the paper work so you can focus on your ideas.</p>
               <a class="learn-more" href="about-us">Learn more &RightArrow;</a>
            </div>
 
-           <div class="card card--green">
-             <h3 class="card-title">Creative Solutions</h3>
-             <p class="card-info">Professional designs that make your business stand out.</p>
-           </div>
          </div>
       </section>
      
@@ -94,7 +90,7 @@
         </div>
          <a href="#" class="service-link ">See Our Services &DownArrowBar;</a>
         
-       <div class="service-container">
+       <div class="service-container " id="services">
           <div class="services">
             <!-- FIRST-SERVICE -->
              <div class="service tax service-box">
@@ -157,7 +153,7 @@
         <div class="track-main-box"> 
         <div class="track-img-container">
          
-           <img class="track-img" src="images/hero.jpg" alt="picture of a phone screen">
+           <img class="track-img" src="images/hero.jpg" loading="lazy" alt="picture of a phone screen">
         </div>
         
           <div>    
@@ -187,12 +183,12 @@
         </div>
       </section>
       <section class="form-section">  
-       <form method="get" action="join.html">
+       <form method="get" action="join.html" id="newsletter-form">
           <div class="form-container"> 
         <h3 class="form-heading footer-headings">Join Our Newsletter</h3>
            
             <label  for="username">Username:<strong>*</strong></label>
-            <input  type="text" id="username" name="username" required>
+            <input  type="text" id="username" name="username" >
 
             <label for="useremail">Email:<strong>*</strong></label>
             <input type="email" id="useremail" name="useremail" required>
@@ -250,24 +246,24 @@
                 <ion-icon class="media-logo" name="logo-facebook"></ion-icon></a>
               </li>
 
-              <li class="social-media-list"><a class="media-logo-link" href="www.instagram.com">
+              <li class="social-media-list"><a class="media-logo-link" href="https://www.instagram.com">
                 <ion-icon class="media-logo" name="logo-instagram"></ion-icon></a>
               </li>
 
               <li class="social-media-list">
-                <a class="media-logo-link" href="www.whatsapp.com ">
+                <a class="media-logo-link" href="https://www.whatsapp.com ">
                   <ion-icon class="media-logo" name="logo-whatsapp"></ion-icon>
                 </a>
               </li>
 
               <li class="social-media-list">
-                <a class="media-logo-link" href="www.twitter.com ">
+                <a class="media-logo-link" href="https://www.twitter.com ">
                   <ion-icon class="media-logo" name="logo-twitter"></ion-icon>
                 </a>
               </li>
 
               <li class="social-media-list">
-                <a class="media-logo-link" href="www.tiktok.com ">
+                <a class="media-logo-link" href="https://www.tiktok.com ">
                   <ion-icon class="media-logo" name="logo-tiktok"></ion-icon>
                 </a>
               </li>
