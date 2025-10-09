@@ -40,10 +40,10 @@ document.addEventListener("DOMContentLoaded",function(){
 // HEADER NAVIGATION LINKS//
 
 const nav_links =[
-{text:"Home", href: "project.html", active:true},
-{text:"About", href: "about.html"},
+{text:"Home", href: "./project.html", active:true},
+{text:"About", href: "./about.html"},
 {text:"Services", href: "#services"},
-{text:"Contact", href: "contact.html"},
+{text:"Contact", href: "./contact.html"},
 
 ];
 
