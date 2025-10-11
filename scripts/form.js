@@ -42,4 +42,3 @@ year.textContent = date.getFullYear();
 
 const lastModified = new Date (document.lastModified)
 document.querySelector("#lastModified").innerHTML ="Last Modified: " + lastModified;
-
