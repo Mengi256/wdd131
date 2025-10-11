@@ -5,39 +5,76 @@ window.addEventListener("load",() =>{
 // HAMBURGER MENU TOGGLE //
 
 
+// const menu = document.querySelector("#menu");
+// const mainNav  = document.querySelector(".navigation");
+// const logoName = document.querySelector(".logo-name")
+// const header = document.querySelector("#header-container")
+// const logo = document.querySelector(".logo")
+// const hero = document.querySelector(" .home-hero-section")
+// const menu_nav = document.querySelector(".menu-nav")
+
+
+// const heroSection = document.querySelector('.hero-section')
+// menu.addEventListener("click", function(){
+//   menu.classList.toggle("show")
+//   mainNav.classList.toggle("show");
+//   logoName.classList.toggle("show")
+//   header.classList.toggle("show")
+//   logo.classList.toggle("show")
+//   hero.classList.toggle("show")
+//   heroSection.classList.toggle("show")
+//   menu_nav.classList.toggle("show")
+  
+
+// });
+
+// document.addEventListener("DOMContentLoaded",function(){
+//   const servicelink = document.querySelector(" .service-link")
+//  const serviceContainer = document.querySelector(".service-container")
+//  servicelink.addEventListener("click",function(e){
+//   e.preventDefault()
+//  serviceContainer.style.display = "block"})
+
+// });
+
+// ===== MENU TOGGLE =====
 const menu = document.querySelector("#menu");
 const mainNav  = document.querySelector(".navigation");
-const logoName = document.querySelector(".logo-name")
-const header = document.querySelector("#header-container")
-const logo = document.querySelector(".logo")
-const hero = document.querySelector(" .home-hero-section")
-const menu_nav = document.querySelector(".menu-nav")
-const body = document.querySelector("body")
+const logoName = document.querySelector(".logo-name");
+const header = document.querySelector("#header-container");
+const logo = document.querySelector(".logo");
+const hero = document.querySelector(".home-hero-section");
+const menu_nav = document.querySelector(".menu-nav");
+const heroSection = document.querySelector(".hero-section");
 
-const heroSection = document.querySelector('.hero-section')
-menu.addEventListener("click", function(){
-  menu.classList.toggle("show")
-  mainNav.classList.toggle("show");
-  logoName.classList.toggle("show")
-  header.classList.toggle("show")
-  logo.classList.toggle("show")
-  hero.classList.toggle("show")
-  heroSection.classList.toggle("show")
-  menu_nav.classList.toggle("show")
-  body.classList.toggle("show")
+// Only run menu toggle if menu exists
+if (menu) {
+  menu.addEventListener("click", function() {
+    menu.classList.toggle("show");
+    mainNav?.classList.toggle("show");
+    logoName?.classList.toggle("show");
+    header?.classList.toggle("show");
+    logo?.classList.toggle("show");
+    hero?.classList.toggle("show");
+    heroSection?.classList.toggle("show");
+    menu_nav?.classList.toggle("show");
+  });
+}
 
+// ===== SERVICE LINK (only for home page) =====
+document.addEventListener("DOMContentLoaded", function() {
+  const servicelink = document.querySelector(".service-link");
+  const serviceContainer = document.querySelector(".service-container");
+
+  if (servicelink && serviceContainer) {
+    servicelink.addEventListener("click", function(e) {
+      e.preventDefault();
+      serviceContainer.style.display = "block";
+    });
+  }
 });
 
-document.addEventListener("DOMContentLoaded",function(){
-  const service_link = document.querySelector(" .service-link")
- const service_container = document.querySelector(".service-container")
- service_link.addEventListener("click",function(e){
-  e.preventDefault()
- service_container.style.display = "block"})
-
-});
-
-// HEADER NAVIGATION LINKS//
+// // HEADER NAVIGATION LINKS//
 
 const nav_links =[
 {text:"Home", href: "./project.html", active:true},
@@ -74,62 +111,63 @@ if(navUl){
 
 //  NEWSLETTER FORM
 
+// Only run if the form exists on this page
 const form = document.querySelector("#newsletter-form");
-form.addEventListener("submit",function(e){
-  const userName = document.querySelector("#username").value;
-  const userEmail = document.querySelector("#useremail").value;
-  if(userName.length < 7 ){
-    e.preventDefault();
-    alert("Username should be longer than 6 characters ")
-   document.querySelector("#userName").value = ""
-   document.querySelector("#userEmail").value = ""
 
-}
-   
-});
+if (form) {
+  form.addEventListener("submit", function(e) {
+    const userName = document.querySelector("#username").value.trim();
+    const userEmail = document.querySelector("#useremail").value.trim();
 
-// const counters = document.querySelectorAll(".count");
-// counters.forEach(counter =>{
-//   const updateCount = () =>{
-//     const target = +counter.getAttribute("data-target");
-//     const count = +counter.innerText;
+    if (userName.length < 7) {
+      e.preventDefault();
+      alert("Username should be longer than 6 characters.");
 
-//     const increment = target /200;
-//     if(count <target){
-//       counter.innerText = (count+increment).toFixed(decimals);
-//       setTimeout(updateCount,10)
-
-//     }
-//     else{
-//       counter.innerText = target.toFixed(decimals)
-//     }
-//   };
-//   updateCount();
-// })
-const counters = document.querySelectorAll(".count");
-
-counters.forEach(counter => {
-  const updateCount = () => {
-    const target = parseFloat(counter.getAttribute("data-target"));
-    const currentText = counter.innerText.replace(/[^\d.]/g, ""); // Remove non-numeric characters
-    const count = parseFloat(currentText) || 0;
-
-    const increment = target / 200;
-    const decimals = target % 1 !== 0 ? 1 : 0;
-
-    if (count < target) {
-      counter.innerText = (count + increment).toFixed(decimals) + getSuffix(counter.innerText);
-      setTimeout(updateCount, 10);
-    } else {
-      counter.innerText = target.toFixed(decimals) + getSuffix(counter.innerText);
+      // clear input fields
+      document.querySelector("#username").value = "";
+      document.querySelector("#useremail").value = "";
     }
-  };
+  });
+}
 
-  updateCount();
+const year = document.querySelector("#year");
+
+if (year) {
+  const date = new Date();
+  year.textContent = date.getFullYear();
+
+  const lastModified = new Date(document.lastModified);
+  const lastModifiedElement = document.querySelector("#lastModified");
+
+  if (lastModifiedElement) {
+    lastModifiedElement.innerHTML = "Last Modified: " + lastModified;
+  }
+}
+
+
+const consultation = [
+  {id : "Tax", name:"Tax services"},
+{
+  id : "register",
+  name : "Business Registration"
+},
+{
+  id: "graphics",
+  name: "Graphic design"
+},
+{ 
+  id: "other",
+  name: "Others"
+}
+]
+  
+const select = document.querySelector("#subject");
+  
+consultation.forEach(consult =>{
+const option = document.createElement("option");
+option.value = consult.id;
+option.textContent = consult.name;
+select.appendChild(option)
 });
 
-function getSuffix(text) {
-  const match = text.match(/[^\d.]+$/);
-  return match ? match[0] : "";
-}
 
