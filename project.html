@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">  
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Nitus Business Solutions">
+   
+    <meta name="description" content="Welcome to NITUS Solutions (U) Ltd — your trusted partner for business registration, tax compliance, graphic design, and professional consultation. We help entrepreneurs and organizations grow with innovative, reliable, and personalized business solutions.">
+
     <meta name="author" content="Mengi Mariam">
     <link rel="stylesheet" href="styles/project.css" >
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -20,7 +22,7 @@
     <header class="home-header">
         <div id="header-container">  
           <div class="logo-logoName">
-           <img class="logo logo-img about-logo" src="images/nitus-logo.png" alt="Nitus solutin logo">
+           <img class="logo logo-img about-logo" src="images/nitus-logo.webp" alt="Nitus solutin logo">
            <p class="logo-name about-logo-name">NITUS SOLUTIONS(U)LTD</p>
           </div>
           
@@ -45,7 +47,7 @@
           </div>
 
           <div class="hero-image-container">
-               <img class="hero-img" src="images/about-hero.webp" alt="Nitus office" >
+               <img class="hero-img" src="images/about-hero.webp" loading="lazy" alt="Nitus office" >
           </div>
       </section>
 
@@ -154,7 +156,7 @@
         <div class="track-main-box"> 
         <div class="track-img-container">
          
-           <img class="track-img" src="images/hero.jpg" loading="lazy" alt="picture of a phone screen">
+           <img class="track-img" src="images/hero.webp" loading="lazy" alt="picture of a phone screen">
         </div>
         
           <div>    
@@ -186,14 +188,14 @@
         </div>
       </section>
       <section class="form-section">  
-       <form method="get" action="join.html" id="newsletter-form">
+       <form  id="newsletter-form">
           <div class="form-container"> 
         <h3 class="form-heading footer-headings">Join Our Newsletter</h3>
            
-            <label  for="username">Username:<strong>*</strong></label>
+            <label  for="username">Username:</label>
             <input  type="text" id="username" name="username" >
 
-            <label for="useremail">Email:<strong>*</strong></label>
+            <label for="useremail">Email:</label>
             <input type="email" id="useremail" name="useremail" required>
         
           
@@ -205,8 +207,8 @@
 
     <footer>
       <div class="footer-container">
-       <div class="contact-info"> 
-          <h3 class="footer-headings contact-heading">Contact Info</h3>
+       <div class="footer-contact-info"> 
+          <h3 class="footer-contact-headings">Contact Info</h3>
         
         
              <div class="icon-contact">
@@ -229,14 +231,14 @@
         <div class="quick-links">
           <h3 class="quick-link-heading footer-headings">Quick Links</h3>
           <nav class="quick-nav">
-            <ul class="quick-lists">
-              <li class="quick-link-list"><a href="#">Home</a></li>
-              <li class="quick-link-list"><a href="#">About us</a></li>
-              <li class="quick-link-list"><a href="#">Service</a></li>
-              <li class="quick-link-list"><a href="#">Contact</a></li>
-              <li class="quick-link-list"><a href="#">Careers</a></li>
-              <li class="quick-link-list"><a href="#">Blog</a></li>
-              <li class="quick-link-list"><a href="#">Privacy policy</a></li>
+             <ul class="quick-lists">
+              <li class="quick-link-list"><a href="project.html">Home</a></li>
+              <li class="quick-link-list"><a href="about.html">About us</a></li>
+              <li class="quick-link-list"><a href="#services">Service</a></li>
+              <li class="quick-link-list"><a href="contact.html">Contact</a></li>
+              <li class="quick-link-list"><a href="careers">Careers</a></li>
+              <li class="quick-link-list"><a href="blog.html">Blog</a></li>
+              <li class="quick-link-list"><a href="privacy.html">Privacy policy</a></li>
             </ul>
           </nav>
         </div>
@@ -275,8 +277,10 @@
         </div>
         
       </div>
+    <div class="copy-right">  
       <p>&copy;<span id="year"></span> | Mengi Mariam | Uganda</p>
     <p id="lastModified"></p>
+    </div>
     </footer>
    
   </body>
