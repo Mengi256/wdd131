@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ===== HEADER NAVIGATION LINKS =====
   const nav_links = [
-    { text: "Home", href: "./project.html", active: true },
+    { text: "Home", href: "./index.html", active: true },
     { text: "Services", href: "#services" },
     { text: "About", href: "./about.html" },
     { text: "Contact", href: "./contact.html" },
