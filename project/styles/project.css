@@ -68,14 +68,10 @@ header{background-color:var(--accent-color2);width:100%;padding:0}
  
  
 }
-#hoverX,#hoverY{
-  transition: all 0.2s;
+#hover{
+  transition: all 0.8s;
 }
-#hoverX:hover{
-  transform: translateX(-1.2rem);
-
-}
-#hoverY:hover{
+#hover:hover{
   transform: translateY(-0.6rem);
 }
 section{
