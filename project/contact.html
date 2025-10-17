@@ -78,21 +78,21 @@
                  </div>
            
             <form method="get" action="inquire.html" class="contact-form">
-               <h2>Send us a message</h2> 
+               <h2>Send us your question</h2> 
                <label for="usernames">Name</label>
-               <input type="text" id="usernames" name="username" placeholder="Name" required>
+               <input type="text" id="usernames" name="username" placeholder="Enter your name" required>
                <label for="company">Company</label>
-               <input type="text" id="company" name="company" placeholder="company" >
+               <input type="text" id="company" name="company" placeholder="Enter company name (optional)" >
                <label for="phone">Phone</label>
-               <input type="tel" id="phone" name="phone" placeholder="Phone">
+               <input type="tel" id="phone" name="phone" placeholder="0701475040">
                <label for="useremails">Email</label>
-               <input type="text" id="useremails" name="useremail" placeholder="Email" required>
-               <label for="subject">Subject</label>
+               <input type="text" id="useremails" name="useremail" placeholder="joe@example.com" required>
+               <label for="subject">What is your question about?</label>
              <select id="subject" name="subject" required>
-             <option value ="" disabled selected> Inquiries... </option> 
+             <option value ="" disabled selected> Select a topic... </option> 
              </select>
-               <label for="message" class="feedback"> Write your inquiry</label>
- <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+               <label for="message" class="feedback"> Your Question</label>
+ <textarea id="message" name="message" rows="5" cols="40" placeholder="Type your question here.." required></textarea>
                
           <input type="submit" class="news-btn btn" value="Send">
             </form>
