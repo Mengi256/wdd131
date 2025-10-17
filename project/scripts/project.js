@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       serviceContainer.style.display = "block";
     });
   }
-
+});
   // ===== HEADER NAVIGATION LINKS =====
   const nav_links = [
     { text: "Home", href: "./index.html", active: true },
@@ -142,4 +142,19 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "inquire.html";
     });
   }
-});
+
+
+const sections = document.querySelectorAll("section");
+if (sections.length) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('scroll');
+        observer.unobserve(entry.target); 
+      }
+    });
+  });
+  sections.forEach(section => observer.observe(section));
+}
+
+
